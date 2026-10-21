@@ -1,0 +1,1 @@
+PC simulation scenes rendered by Unity's scene camera into a render texture. Not Quest passthrough or native-window screenshots.

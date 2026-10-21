@@ -1,0 +1,31 @@
+Unity PC simulation verification
+PASS PC starts without claiming real room sensing
+PASS Quest camera and room scanner remain disabled on PC
+PASS no completion before valid table fit
+PASS horizontal plane geometry accepted
+PASS plane center and footprint preserve scan dimensions
+PASS volume table geometry accepted
+PASS volume top agrees with tabletop plane
+PASS vertical plane rejected as tabletop
+PASS zero width surface rejected
+PASS transform scale is applied once
+PASS small tabletop tilt is preserved
+PASS target stays on a small valid tabletop
+PASS content aligns with position and yaw
+PASS virtual door is positioned relative to the fitted table
+PASS platform uses same table width and depth
+PASS wrong identity cannot complete condition
+PASS rotated box uses actual collider bottom and footprint
+PASS floating box above the surface is rejected
+PASS outside target area rejected
+PASS held box does not complete placement
+PASS reset cancels active grab before moving props
+PASS leaving target resets dwell timer
+PASS short dwell does not solve
+PASS stable placement fires a single completion event
+PASS wrong physical box keeps door closed: Ready green=(-0.48, 0.87, -0.18) parent=02_Table Matched Content
+PASS physics placement completes the event
+PASS event fired exactly once
+PASS door animation opens beyond ninety degrees
+PASS reset restores ready state and closes door
+Android/Quest spatial scan, passthrough and controller grip: NOT hardware-tested.

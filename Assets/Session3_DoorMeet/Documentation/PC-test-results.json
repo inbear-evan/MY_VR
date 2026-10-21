@@ -1,0 +1,46 @@
+{
+  "host": {
+    "exit_code": 0,
+    "checks": [
+      "[DoorMeet TEST PASS] start host",
+      "[DoorMeet TEST PASS] cannot solve before both ready",
+      "[DoorMeet TEST PASS] wrong code rejected",
+      "[DoorMeet TEST PASS] one solution cannot unlock door",
+      "[DoorMeet TEST PASS] both solutions unlock door on host",
+      "[DoorMeet TEST PASS] reset clears ready solutions and door",
+      "[DoorMeet TEST] RESET_COMPLETE",
+      "[DoorMeet TEST] SECOND_UNLOCKED",
+      "[DoorMeet TEST PASS] disconnect revokes unlock and progress",
+      "[DoorMeet TEST PASS] rejoined peer starts fresh and completes new round",
+      "[DoorMeet TEST COMPLETE] host"
+    ],
+    "complete": true
+  },
+  "client": {
+    "exit_code": 0,
+    "checks": [
+      "[DoorMeet TEST PASS] start client",
+      "[DoorMeet TEST PASS] B cannot complete A through public code API",
+      "[DoorMeet TEST PASS] wrong key reaches the real XR socket",
+      "[DoorMeet TEST PASS] wrong socket key rejected",
+      "[DoorMeet TEST PASS] wrong key removed without reselection",
+      "[DoorMeet TEST PASS] unlock state replicated to client",
+      "[DoorMeet TEST PASS] reset replicated to client",
+      "[DoorMeet TEST PASS] reconnect client",
+      "[DoorMeet TEST PASS] reconnect receives fresh state",
+      "[DoorMeet TEST PASS] reconnected client completes socket mission",
+      "[DoorMeet TEST COMPLETE] client"
+    ],
+    "complete": true
+  },
+  "reject": {
+    "exit_code": 0,
+    "checks": [
+      "[DoorMeet TEST PASS] third client attempts join",
+      "[DoorMeet TEST PASS] third participant rejected",
+      "[DoorMeet TEST PASS] rejection reason supplied",
+      "[DoorMeet TEST COMPLETE] reject"
+    ],
+    "complete": true
+  }
+}
